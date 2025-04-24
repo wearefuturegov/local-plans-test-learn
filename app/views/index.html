@@ -1,20 +1,16 @@
-{% extends "layouts/main.html" %}
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
 
-{% set pageName="Home" %}
+{% block pageTitle %}
+  {{ serviceName }}
+{% endblock %}
 
 {% block content %}
 
-<div class="govuk-grid-row">
-  <div class="govuk-grid-column-two-thirds">
-
-    {% include "govuk-prototype-kit/includes/homepage-top.njk" %}
-
-    <h1 class="govuk-heading-xl">
-      {{ serviceName }}
-    </h1>
-
-    {% include "govuk-prototype-kit/includes/homepage-bottom.njk" %}
-  </div>
-</div>
+  <h1 class="govuk-heading-l">
+    {{ serviceName }}
+  </h1>
+  <p class="govuk-body">
+    <a href="1-start">Start the 'Choose your own [adventure] local plan evidence base' experiment</a>
+  </p>
 
 {% endblock %}

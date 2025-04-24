@@ -1,0 +1,73 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+  Section 2 - {{ serviceName }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <form action="3-section" method="post" novalidate>
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                  What is the key typology of your local authority area?
+                </h1>
+              </legend>
+              <div class="govuk-radios" data-module="govuk-radios">
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="typology" name="typology" type="radio" value="Urban dense" {{ checked('typology','Urban dense') }}>
+                  <label class="govuk-label govuk-radios__label" for="typology">
+                    Urban dense
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="typology-2" name="typology" type="radio" value="Rural and dispersed" {{ checked('typology','Rural and dispersed') }}>
+                  <label class="govuk-label govuk-radios__label" for="typology-2">
+                    Rural and dispersed
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="typology-3" name="typology" type="radio" value="Mixed-use or urban fringe" {{ checked('typology','Mixed-use or urban fringe') }}>
+                  <label class="govuk-label govuk-radios__label" for="typology-3">
+                    Mixed-use or urban fringe
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="typology-4" name="typology" type="radio" value="Notable heritage or conservation designations" {{ checked('typology','Notable heritage or conservation designations') }}>
+                  <label class="govuk-label govuk-radios__label" for="typology-4">
+                    Notable heritage or conservation designations
+                  </label>
+                </div>
+                <div class="govuk-radios__item">
+                  <input class="govuk-radios__input" id="typology-4" name="typology" type="radio" value="Rapidly growing/expanding" {{ checked('typology','Rapidly growing/expanding') }}>
+                  <label class="govuk-label govuk-radios__label" for="typology-5">
+                    Rapidly growing/expanding
+                  </label>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+
+  <!-- <ul class="govuk-list govuk-list--bullet">
+    <li>Urban Dense</li>
+    <li>Rural and Dispersed</li>
+    <li>Mixed-Use or Urban Fringe</li>
+    <li>Notable Heritage or Conservation Designations</li>
+    <li>Rapidly Growing/Expanding</li>
+  </ul> -->
+{% endblock %}

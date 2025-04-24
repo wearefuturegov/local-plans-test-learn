@@ -1,0 +1,58 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+  Section 4 - {{ serviceName }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <form action="5-section" method="post" novalidate>
+
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="localConsiderations-hint">
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                    <h1 class="govuk-fieldset__heading">
+                        Are there additional local considerations?
+                    </h1>
+                  </legend>
+                  <div id="localConsiderations-hint" class="govuk-hint">
+                    Select all that apply. For example, a coastal urban area near an airport experiencing rapid growth.
+                  </div>
+                  <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="localConsiderations" name="localConsiderations" type="checkbox" value="Coastal areas" aria-describedby="localConsiderations-item-hint" {{ checked('localConsiderations','Coastal areas') }}>
+                      <label class="govuk-label govuk-checkboxes__label" for="localConsiderations">
+                        Coastal areas
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="localConsiderations-2" name="localConsiderations" type="checkbox" value="Proximity to an airport" {{ checked('localConsiderations','Proximity to an airport') }}>
+                      <label class="govuk-label govuk-checkboxes__label" for="localConsiderations-2">
+                        Proximity to an airport
+                      </label>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="localConsiderations-3" name="localConsiderations" type="checkbox" value="Heavy tourism based" {{ checked('localConsiderations','Heavy tourism based') }}>
+                      <label class="govuk-label govuk-checkboxes__label" for="localConsiderations-3">
+                        Heavy tourism based
+                      </label>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

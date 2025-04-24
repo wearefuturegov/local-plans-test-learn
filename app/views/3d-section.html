@@ -1,0 +1,75 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+  Section 3d - {{ serviceName }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <form action="4-section" method="post" novalidate>
+            
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="notableHeritage-hint">
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                    <h1 class="govuk-fieldset__heading">
+                        Notable heritage or conservation designations
+                    </h1>
+                  </legend>
+                  <div id="notableHeritage-hint" class="govuk-hint">
+                    Select all recommended evidence studies that apply. <br />These will be added to your final tailored recommendations.
+                  </div>
+                  <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="notableHeritage" name="notableHeritage" type="checkbox" value="Heritage impact and conservation study" aria-describedby="notableHeritage-item-hint" {{ checked('notableHeritage','Heritage impact and conservation study') }}>
+                      <label class="govuk-label govuk-checkboxes__label" for="notableHeritage">
+                        Heritage impact and conservation study
+                      </label>
+                      <div id="notableHeritage-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                        Evaluate the effects of development on heritage assets and conservation zones.
+                      </div>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="notableHeritage-2" name="notableHeritage" type="checkbox" value="Community and stakeholder engagement study" {{ checked('notableHeritage','Community and stakeholder engagement study') }}>
+                      <label class="govuk-label govuk-checkboxes__label" for="notableHeritage-2">
+                        Community and stakeholder engagement study
+                      </label>
+                      <div id="notableHeritage-2-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                        Focus on targeted consultations with local heritage groups and conservation bodies.
+                      </div>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="notableHeritage-3" name="notableHeritage" type="checkbox" value="Sustainable development integration study" {{ checked('notableHeritage','Sustainable development integration study') }}>
+                      <label class="govuk-label govuk-checkboxes__label" for="notableHeritage-3">
+                        Sustainable development integration study
+                      </label>
+                      <div id="notableHeritage-3-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                        Balance modern infrastructure needs with heritage conservation, including strategies for adaptive reuse.
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+
+  <!-- <ul class="govuk-list govuk-list--bullet">
+    <li>Urban Dense</li>
+    <li>Rural and Dispersed</li>
+    <li>Mixed-Use or Urban Fringe</li>
+    <li>Notable Heritage or Conservation Designations</li>
+    <li>Rapidly Growing/Expanding</li>
+  </ul> -->
+{% endblock %}

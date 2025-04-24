@@ -1,0 +1,75 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+  Section 3e - {{ serviceName }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <form action="4-section" method="post" novalidate>
+          
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="rapidGrowing-hint">
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                    <h1 class="govuk-fieldset__heading">
+                        Rapidly growing/expanding
+                    </h1>
+                  </legend>
+                  <div id="rapidGrowing-hint" class="govuk-hint">
+                    Select all recommended evidence studies that apply. <br />These will be added to your final tailored recommendations.
+                  </div>
+                  <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="rapidGrowing" name="rapidGrowing" type="checkbox" value="Future growth projection study" aria-describedby="rapidGrowing-item-hint" {{ checked('rapidGrowing','Future growth projection study') }}>
+                      <label class="govuk-label govuk-checkboxes__label" for="rapidGrowing">
+                        Future growth projection study
+                      </label>
+                      <div id="rapidGrowing-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                        Modeling of population growth and housing/infrastructure demands.
+                      </div>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="rapidGrowing-2" name="rapidGrowing" type="checkbox" value="Provision and capacity analysis" {{ checked('rapidGrowing','Provision and capacity analysis') }}>
+                      <label class="govuk-label govuk-checkboxes__label" for="rapidGrowing-2">
+                        Provision and capacity analysis
+                      </label>
+                      <div id="rapidGrowing-2-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                        Review of current service capacities (schools, healthcare, transport) relative to forecast growth.
+                      </div>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="rapidGrowing-3" name="rapidGrowing" type="checkbox" value="Sustainability and resilience assessment" {{ checked('rapidGrowing','Sustainability and resilience assessment') }}>
+                      <label class="govuk-label govuk-checkboxes__label" for="rapidGrowing-3">
+                        Sustainability and resilience assessment
+                      </label>
+                      <div id="rapidGrowing-3-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                        Integration of climate resilience and natural hazard adaptation into growth plans.
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+
+  <!-- <ul class="govuk-list govuk-list--bullet">
+    <li>Urban Dense</li>
+    <li>Rural and Dispersed</li>
+    <li>Mixed-Use or Urban Fringe</li>
+    <li>Notable Heritage or Conservation Designations</li>
+    <li>Rapidly Growing/Expanding</li>
+  </ul> -->
+{% endblock %}

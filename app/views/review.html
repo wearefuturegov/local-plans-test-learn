@@ -1,0 +1,72 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+  Review - {{ serviceName }}
+{% endblock %}
+
+{% block content %}
+
+  <h1 class="govuk-heading-l">
+    Your evidence base studies review
+  </h1>
+  <p class="govuk-body">
+    This is the end where it all comes together 🤞
+  </p>
+  <p class="govuk-body">
+    Include dynamic sections based on selections throughout the process. <br />
+    Add interconnected considerations based on cross-cutting themes.
+  </p>
+
+  <ul class="govuk-list govuk-list--bullet">
+  {% for key, value in data %}
+    <li>
+        <strong>{{ key }}:</strong>
+        {% if value is iterable and not value is string %}
+            <ul>
+                {% for subValue in value %}
+                    <li>{{ subValue }}</li>
+                {% endfor %}
+            </ul>
+        {% else %}
+            {{ value }}
+        {% endif %}
+    </li>
+{% endfor %}
+</ul>
+
+<p class="govuk-body">
+    Data dump {{ data | dump}}
+  </p>
+
+  <p class="govuk-body">
+    Considerations to add depending on results:
+  </p>
+  <ul class="govuk-list govuk-list--bullet">
+      <li>
+          <strong>Urban dense areas</strong> If metrics indicate rising air pollution, integrate detailed air quality monitoring and environmental health studies.              
+      </li>
+      <li>
+        <strong>Rural and dispersed areas</strong> If local economies rely on agricultural and/or tourism activities, include targeted economic viability and diversification studies.              
+    </li>
+    <li>
+        <strong>Mixed-user or urban fringe areas</strong> Map overlapping zones and potential conflicts to ensure cohesive policies between residential, commercial, and industrial uses.              
+    </li>
+    <li>
+        <strong>Areas with notable heritage/conversation designations</strong> Coordinate with economic assessments to identify potential grants or incentives for conservation projects.              
+    </li>
+    <li>
+        <strong>Rapidly growing/expanding areas</strong> Cross-reference with urban dense or mixed-use studies if growth is concentrated in particular districts.              
+    </li>
+    <li>
+        <strong>Coastal areas</strong> Link coastal studies with sustainability assessments from urban or rural branches as needed, ensuring environmental recommendations dovetail with local infrastructure modifications.              
+    </li>
+    <li>
+        <strong>Proximty to an airport</strong> Integrate with urban dense or growth studies if the area experiences overlapping urban pressures, aligning transport and housing deliverables with airport-related impacts.              
+    </li>
+    <li>
+        <strong>Heavy tourism based areas</strong>  Combine with cultural, environmental, and land-use studies to ensure tourism benefits are balanced against local resident needs and conservation priorities.
+    </li>
+  </ul>
+
+
+{% endblock %}

@@ -1,0 +1,67 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+  Section 6c - {{ serviceName }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <form action="review" method="post" novalidate>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="heavyTourism-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                    Heavy tourism based area studies
+                </h1>
+              </legend>
+              <div id="heavyTourism-hint" class="govuk-hint">
+                Select all recommended evidence studies that apply. <br />These will be added to your final tailored recommendations.
+              </div>
+              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="heavyTourism" name="heavyTourism" type="checkbox" value="Tourism demand and impact analysis" aria-describedby="heavyTourism-item-hint" {{ checked('heavyTourism','Tourism demand and impact analysis') }}>
+                  <label class="govuk-label govuk-checkboxes__label" for="heavyTourism">
+                    Tourism demand and impact analysis
+                  </label>
+                  <div id="heavyTourism-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                    Detailed review of seasonal impacts, visitor flows, and service pressures.
+                  </div>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="heavyTourism-2" name="heavyTourism" type="checkbox" value="Infrastructure and public service capacity study" {{ checked('heavyTourism','Infrastructure and public service capacity study') }}>
+                  <label class="govuk-label govuk-checkboxes__label" for="heavyTourism-2">
+                    Infrastructure and public service capacity study
+                  </label>
+                  <div id="heavyTourism-2-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                    Assessment of capacity in hospitality, transport, and public amenities to handle peak tourism volumes.
+                  </div>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="heavyTourism-3" name="heavyTourism" type="checkbox" value="Economic diversification and sustainability study" {{ checked('heavyTourism','Economic diversification and sustainability study') }}>
+                  <label class="govuk-label govuk-checkboxes__label" for="heavyTourism-3">
+                    Economic diversification and sustainability study
+                  </label>
+                  <div id="heavyTourism-3-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                    Examine measures for diversifying the local economy and ensuring sustainability post-peak tourism.
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+          
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

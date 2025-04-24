@@ -1,0 +1,75 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+  Section 3c - {{ serviceName }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <form action="4-section" method="post" novalidate>
+
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="mixedUse-hint">
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                    <h1 class="govuk-fieldset__heading">
+                        Mixed-use or urban fringe
+                    </h1>
+                  </legend>
+                  <div id="mixedUse-hint" class="govuk-hint">
+                    Select all recommended evidence studies that apply. <br />These will be added to your final tailored recommendations.
+                  </div>
+                  <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="mixedUse" name="mixedUse" type="checkbox" value="Land-use transition study" aria-describedby="mixedUse-item-hint" {{ checked('mixedUse','Land-use transition study') }}>
+                      <label class="govuk-label govuk-checkboxes__label" for="mixedUse">
+                        Land-use transition study
+                      </label>
+                      <div id="mixedUse-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                        Assessment of zoning changes, service integration, and spatial distribution of urban versus rural uses.
+                      </div>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="mixedUse-2" name="mixedUse" type="checkbox" value="Housing mix and affordability study" {{ checked('mixedUse','Housing mix and affordability study') }}>
+                      <label class="govuk-label govuk-checkboxes__label" for="mixedUse-2">
+                        Housing mix and affordability study
+                      </label>
+                      <div id="mixedUse-2-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                        Analysis of diverse housing requirements and affordability options.
+                      </div>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="mixedUse-3" name="mixedUse" type="checkbox" value="Transport and service integration study" {{ checked('mixedUse','Transport and service integration study') }}>
+                      <label class="govuk-label govuk-checkboxes__label" for="mixedUse-3">
+                        Transport and service integration study
+                      </label>
+                      <div id="mixedUse-3-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                        Coordination of transit planning with community amenities.
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+            
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+
+  <!-- <ul class="govuk-list govuk-list--bullet">
+    <li>Urban Dense</li>
+    <li>Rural and Dispersed</li>
+    <li>Mixed-Use or Urban Fringe</li>
+    <li>Notable Heritage or Conservation Designations</li>
+    <li>Rapidly Growing/Expanding</li>
+  </ul> -->
+{% endblock %}

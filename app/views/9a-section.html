@@ -1,0 +1,67 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+  Section 6b - {{ serviceName }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <form action="9b-section" method="post" novalidate>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="airportProximity-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                    Proximity to an airport studies
+                </h1>
+              </legend>
+              <div id="airportProximity-hint" class="govuk-hint">
+                Select all recommended evidence studies that apply. <br />These will be added to your final tailored recommendations.
+              </div>
+              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="airportProximity" name="airportProximity" type="checkbox" value="Aviation noise and air quality impact study" aria-describedby="airportProximity-item-hint" {{ checked('airportProximity','Aviation noise and air quality impact study') }}>
+                  <label class="govuk-label govuk-checkboxes__label" for="airportProximity">
+                    Aviation noise and air quality impact study
+                  </label>
+                  <div id="airportProximity-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                    Focus on noise mapping, air quality monitoring, and health impacts.
+                  </div>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="airportProximity-2" name="airportProximity" type="checkbox" value="Connectivity and infrastructure integration study" {{ checked('airportProximity','Connectivity and infrastructure integration study') }}>
+                  <label class="govuk-label govuk-checkboxes__label" for="airportProximity-2">
+                    Connectivity and infrastructure integration study
+                  </label>
+                  <div id="airportProximity-2-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                    Assess transport connectivity (road and transit) between the airport and surrounding areas; evaluate potential land use conflicts.
+                  </div>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="airportProximity-3" name="airportProximity" type="checkbox" value="Economic and employment impact study" {{ checked('airportProximity','Economic and employment impact study') }}>
+                  <label class="govuk-label govuk-checkboxes__label" for="airportProximity-3">
+                    Economic and employment impact study
+                  </label>
+                  <div id="airportProximity-3-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                    Evaluate how the airport drives local economic growth, business development, and tourism.
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

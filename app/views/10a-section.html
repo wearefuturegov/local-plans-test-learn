@@ -1,0 +1,67 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+  Section 6a - {{ serviceName }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <form action="10b-section" method="post" novalidate>
+
+          <div class="govuk-form-group">
+            <fieldset class="govuk-fieldset" aria-describedby="coastalArea-hint">
+              <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                <h1 class="govuk-fieldset__heading">
+                    Coastal area studies
+                </h1>
+              </legend>
+              <div id="coastalArea-hint" class="govuk-hint">
+                Select all recommended evidence studies that apply. <br />These will be added to your final tailored recommendations.
+              </div>
+              <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="coastalArea" name="coastalArea" type="checkbox" value="Coastal zone management study" aria-describedby="coastalArea-item-hint" {{ checked('coastalArea','Coastal zone management study') }}>
+                  <label class="govuk-label govuk-checkboxes__label" for="coastalArea">
+                    Coastal zone management study
+                  </label>
+                  <div id="coastalArea-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                    Review of coastal erosion, flood risk, and shoreline integrity.
+                  </div>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="coastalArea-2" name="coastalArea" type="checkbox" value="Marine and environmental impact assessment" {{ checked('coastalArea','Marine and environmental impact assessment') }}>
+                  <label class="govuk-label govuk-checkboxes__label" for="coastalArea-2">
+                    Marine and environmental impact assessment
+                  </label>
+                  <div id="coastalArea-2-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                    Analysis of marine ecosystems, water quality, and coastal biodiversity.
+                  </div>
+                </div>
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="coastalArea-3" name="coastalArea" type="checkbox" value="Resilience and adaptation strategy study" {{ checked('coastalArea','Resilience and adaptation strategy study') }}>
+                  <label class="govuk-label govuk-checkboxes__label" for="coastalArea-3">
+                    Resilience and adaptation strategy study
+                  </label>
+                  <div id="coastalArea-3-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                    Integration of climate change adaptation measures, such as sea-level rise mitigation.
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+          </div>
+
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+{% endblock %}

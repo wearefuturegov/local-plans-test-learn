@@ -1,0 +1,75 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+  Section 3b - {{ serviceName }}
+{% endblock %}
+
+{% block content %}
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+        <form action="4-section" method="post" novalidate>
+
+            <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset" aria-describedby="ruralDispersed-hint">
+                  <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
+                    <h1 class="govuk-fieldset__heading">
+                        Rural and dispersed
+                    </h1>
+                  </legend>
+                  <div id="ruralDispersed-hint" class="govuk-hint">
+                    Select all recommended evidence studies that apply. <br />These will be added to your final tailored recommendations.
+                  </div>
+                  <div class="govuk-checkboxes" data-module="govuk-checkboxes">
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="ruralDispersed" name="ruralDispersed" type="checkbox" value="Rural housing and land use study" aria-describedby="ruralDispersed-item-hint" {{ checked('ruralDispersed','Rural housing and land use study') }}>
+                      <label class="govuk-label govuk-checkboxes__label" for="ruralDispersed">
+                        Rural housing and land use study
+                      </label>
+                      <div id="ruralDispersed-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                        Examination of local housing availability, agricultural practices, and landscape characteristics.
+                      </div>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="ruralDispersed-2" name="ruralDispersed" type="checkbox" value="Connectivity and accessibility study" {{ checked('ruralDispersed','Connectivity and accessibility study') }}>
+                      <label class="govuk-label govuk-checkboxes__label" for="ruralDispersed-2">
+                        Connectivity and accessibility study
+                      </label>
+                      <div id="ruralDispersed-2-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                        Analysis of transport connectivity, broadband availability, and service access.
+                      </div>
+                    </div>
+                    <div class="govuk-checkboxes__item">
+                      <input class="govuk-checkboxes__input" id="ruralDispersed-3" name="ruralDispersed" type="checkbox" value="Environmental and biodiversity assessment" {{ checked('ruralDispersed','Environmental and biodiversity assessment') }}>
+                      <label class="govuk-label govuk-checkboxes__label" for="ruralDispersed-3">
+                        Environmental and biodiversity assessment
+                      </label>
+                      <div id="ruralDispersed-3-item-hint" class="govuk-hint govuk-checkboxes__hint">
+                        Assessment of local conservation areas, species protection, and sustainable land use.
+                      </div>
+                    </div>
+                  </div>
+                </fieldset>
+              </div>
+
+          <button type="submit" class="govuk-button" data-module="govuk-button">
+            Continue
+          </button>
+        </form>
+      </div>
+    </div>
+  </main>
+</div>
+
+
+  <!-- <ul class="govuk-list govuk-list--bullet">
+    <li>Urban Dense</li>
+    <li>Rural and Dispersed</li>
+    <li>Mixed-Use or Urban Fringe</li>
+    <li>Notable Heritage or Conservation Designations</li>
+    <li>Rapidly Growing/Expanding</li>
+  </ul> -->
+{% endblock %}
