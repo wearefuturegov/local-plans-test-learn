@@ -6,31 +6,33 @@
 
 {% block content %}
 
+
+
 <div class="govuk-width-container">
   <a href="javascript:history.back()" class="govuk-back-link">Back</a>
   <main class="govuk-main-wrapper " id="main-content" role="main">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <form action="5-section" method="post" novalidate>
+        <form action="6-section" method="post" novalidate>
 
             <div class="govuk-form-group">
                 <fieldset class="govuk-fieldset" aria-describedby="localConsiderations-hint">
                   <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                     <h1 class="govuk-fieldset__heading">
-                       Are you expecting to allocate a site with 1000 homes or more?
+                      Are you expecting to allocate a large site that's critical to your plan's strategic priorities?
                     </h1>
                   </legend>
                  
                   <div class="govuk-radios" data-module="govuk-radios">
                     <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="1000" name="1000" type="radio" value="Yes" {{ checked('1000','Yes') }}>
-                      <label class="govuk-label govuk-radios__label" for="1000">
+                      <input class="govuk-radios__input" id="critical" name="critical" type="radio" value="Yes" {{ checked('critical','Yes') }}>
+                      <label class="govuk-label govuk-radios__label" for="critical">
                         Yes
                       </label>
                     </div>
                     <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="1000-2" name="1000" type="radio" value="No" {{ checked('1000','No') }}>
-                      <label class="govuk-label govuk-radios__label" for="1000-2">
+                      <input class="govuk-radios__input" id="critical-2" name="critical" type="radio" value="No" {{ checked('critical','No') }}>
+                      <label class="govuk-label govuk-radios__label" for="critical-2">
                         No
                       </label>
                     </div>

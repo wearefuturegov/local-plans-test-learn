@@ -6,31 +6,33 @@
 
 {% block content %}
 
+
+
 <div class="govuk-width-container">
   <a href="javascript:history.back()" class="govuk-back-link">Back</a>
   <main class="govuk-main-wrapper " id="main-content" role="main">
     <div class="govuk-grid-row">
       <div class="govuk-grid-column-two-thirds">
-        <form action="5-section" method="post" novalidate>
+        <form action="8-section" method="post" novalidate>
 
             <div class="govuk-form-group">
                 <fieldset class="govuk-fieldset" aria-describedby="localConsiderations-hint">
                   <legend class="govuk-fieldset__legend govuk-fieldset__legend--l">
                     <h1 class="govuk-fieldset__heading">
-                       Are you expecting to allocate a site with 1000 homes or more?
+                      Is your local planning authority within Greater London?
                     </h1>
                   </legend>
                  
                   <div class="govuk-radios" data-module="govuk-radios">
                     <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="1000" name="1000" type="radio" value="Yes" {{ checked('1000','Yes') }}>
-                      <label class="govuk-label govuk-radios__label" for="1000">
+                      <input class="govuk-radios__input" id="london" name="london" type="radio" value="Yes" {{ checked('london','Yes') }}>
+                      <label class="govuk-label govuk-radios__label" for="london">
                         Yes
                       </label>
                     </div>
                     <div class="govuk-radios__item">
-                      <input class="govuk-radios__input" id="1000-2" name="1000" type="radio" value="No" {{ checked('1000','No') }}>
-                      <label class="govuk-label govuk-radios__label" for="1000-2">
+                      <input class="govuk-radios__input" id="london-2" name="london" type="radio" value="No" {{ checked('london','No') }}>
+                      <label class="govuk-label govuk-radios__label" for="london-2">
                         No
                       </label>
                     </div>
