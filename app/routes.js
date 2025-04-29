@@ -63,7 +63,7 @@ router.post('/6-section', function(request, response) {
 
 router.post('/7-section', function(request, response) {
 
-    var sites = request.session.data['critical']
+    var sites = request.session.data['multiple']
 
     if (sites == "Yes"){
         response.redirect("/7-section")
@@ -115,7 +115,7 @@ router.post('/10-section', function(request, response) {
 
 router.post('/11-section', function(request, response) {
 
-    var sites = request.session.data['alter']
+    var sites = request.session.data['newgreenbelt']
 
     if (sites == "Yes"){
         response.redirect("/review")
