@@ -1,0 +1,221 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+  Review - {{ serviceName }}
+{% endblock %}
+
+{% block content %}
+
+<main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+  
+
+                    <h1 class="govuk-heading-l">
+                        Your evidence base studies review
+                    </h1>
+
+                    <p class="govuk-body">
+                        This tailored recommendation is based on the information provided and what you've chosen relative to your local authority.
+                    </p>
+
+                    <p class="govuk-body"><strong class="govuk-tag govuk-tag--blue">
+                        <strong>Must</strong>
+                    </strong></p>
+
+                    <p class="govuk-body">
+                        <strong>Core evidence studies</strong>
+                    </p>
+                    <ul class="govuk-list govuk-list--bullet">
+                        <li>Demographic analysis</li>
+                        <li>Housing demand and supply review</li>
+                        <li>Economic trends assessment</li>
+                        <li>Environmental impact/assessment overview</li>
+                        <li>Infrastructure and transport analysis</li>
+                    </ul>
+
+                    <p class="govuk-body"><strong class="govuk-tag govuk-tag--green">
+                        <strong>Should</strong> 
+                    </strong></p>
+
+                    <p class="govuk-body">
+                        Based on typology:
+                    </p>
+                    
+                    <!-- <p class="govuk-body">
+                        Typology: <strong>{{ data.typology }}</strong>
+                    </p> -->
+
+                    {% if data.urbanDense %}
+                    <p class="govuk-body">
+                        <strong>Urban dense</strong>
+                    </p>
+                    <ul class="govuk-list govuk-list--bullet">
+                        {% for study in data.urbanDense %}
+                            <li>{{ study }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                
+                    {% if data.ruralDispersed %}
+                    <p class="govuk-body">
+                        <strong>Rural and dispersed</strong>
+                    </p>
+                    <ul class="govuk-list govuk-list--bullet">
+                        {% for study in data.ruralDispersed %}
+                            <li>{{ study }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+
+                    {% if data.mixedUse %}
+                    <p class="govuk-body">
+                        <strong>Mixed-use or urban fringe</strong>
+                    </p>
+                    <ul class="govuk-list govuk-list--bullet">
+                        {% for study in data.mixedUse %}
+                            <li>{{ study }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+
+                    {% if data.notableHeritage %}
+                    <p class="govuk-body">
+                        <strong>Notable heritage or conservation designations</strong>
+                    </p>
+                    <ul class="govuk-list govuk-list--bullet">
+                        {% for study in data.notableHeritage %}
+                            <li>{{ study }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+
+                    {% if data.rapidGrowing %}
+                    <p class="govuk-body">
+                        <strong>Rapidly growing/expanding</strong>
+                    </p>
+                    <ul class="govuk-list govuk-list--bullet">
+                        {% for study in data.rapidGrowing %}
+                            <li>{{ study }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                
+                    {% if data.localConsiderations %}
+                    <p class="govuk-body">
+                        Based on local considerations:
+                    </p>
+                    {% endif %}
+
+                    {% if data.coastalArea %}
+                    <p class="govuk-body">
+                        <strong>Coastal areas</strong>
+                    </p>
+                    <ul class="govuk-list govuk-list--bullet">
+                        {% for study in data.coastalArea %}
+                            <li>{{ study }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+
+                    {% if data.airportProximity %}
+                    <p class="govuk-body">
+                        <strong>Proximity to an airport</strong>
+                    </p>
+                    <ul class="govuk-list govuk-list--bullet">
+                        {% for study in data.airportProximity %}
+                            <li>{{ study }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+
+                    {% if data.heavyTourism %}
+                    <p class="govuk-body">
+                        <strong>Heavy tourism based</strong>
+                    </p>
+                    <ul class="govuk-list govuk-list--bullet">
+                        {% for study in data.heavyTourism %}
+                            <li>{{ study }}</li>
+                        {% endfor %}
+                    </ul>
+                    {% endif %}
+                    
+                    <p class="govuk-body"><strong class="govuk-tag govuk-tag--yellow">
+                        <strong>Could</strong> 
+                    </strong></p>
+
+                    <p class="govuk-body">
+                        Based on your recommendations you might want to consideration these interconnections.
+                    </p>
+
+                    {% if data.urbanDense %}
+                    <p class="govuk-body">
+                        <strong>Urban dense areas</strong> if metrics indicate rising air pollution, integrate detailed air quality monitoring and environmental health studies.           
+                    </p>
+                    {% endif %}
+                
+                    {% if data.ruralDispersed %}
+                    <p class="govuk-body">
+                        <strong>Rural and dispersed areas</strong> if local economies rely on agricultural and/or tourism activities, include targeted economic viability and diversification studies.           
+                    </p>
+                    {% endif %}
+
+                    {% if data.mixedUse %}
+                    <p class="govuk-body">
+                        <strong>Mixed-use or urban fringe areas</strong> map overlapping zones and potential conflicts to ensure cohesive policies between residential, commercial, and industrial uses.              
+                    </p>
+                    {% endif %}
+
+                    {% if data.notableHeritage %}
+                    <p class="govuk-body">
+                        <strong>Areas with notable heritage/conversation designations</strong> coordinate with economic assessments to identify potential grants or incentives for conservation projects.         
+                    </p>
+                    {% endif %}
+
+                    {% if data.rapidGrowing %}
+                    <p class="govuk-body">
+                        <strong>Rapidly growing/expanding areas</strong> cross-reference with urban dense or mixed-use studies if growth is concentrated in particular districts.        
+                    </p>
+                    {% endif %}
+
+                    {% if data.coastalArea %}
+                    <p class="govuk-body">
+                        <strong>Coastal areas</strong> link coastal studies with sustainability assessments from urban or rural branches as needed, ensuring environmental recommendations dovetail with local infrastructure modifications.           
+                    </p>
+                    {% endif %}
+
+                    {% if data.airportProximity %}
+                    <p class="govuk-body">
+                        <strong>Proximty to an airport</strong> integrate with urban dense or growth studies if the area experiences overlapping urban pressures, aligning transport and housing deliverables with airport-related impacts.           
+                    </p>
+                    {% endif %}
+
+                    {% if data.heavyTourism %}
+                    <p class="govuk-body">
+                        <strong>Heavy tourism based areas</strong>  combine with cultural, environmental, and land-use studies to ensure tourism benefits are balanced against local resident needs and conservation priorities.      
+                    </p>
+                    {% endif %}
+
+                    <!-- <ul class="govuk-list govuk-list--bullet">
+                    {% for key, value in data %}
+                        <li>
+                            <strong>{{ key }}:</strong>
+                            {% if value is iterable and not value is string %}
+                                <ul>
+                                    {% for subValue in value %}
+                                        <li>{{ subValue }}</li>
+                                    {% endfor %}
+                                </ul>
+                            {% else %}
+                                {{ value }}
+                            {% endif %}
+                        </li>
+                    {% endfor %}
+                    </ul> -->
+
+
+                </div>
+            </div>
+          </main>
+        
+{% endblock %}
