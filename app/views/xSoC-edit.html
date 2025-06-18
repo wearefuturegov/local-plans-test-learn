@@ -1,0 +1,169 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+Regulation 1
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+
+
+        <h1 class="govuk-heading-l">
+          Regulation 7: [regulation to be complied with]
+        </h1>
+
+        <body class="govuk-template__body">
+          <div class="govuk-width-container">
+
+            <form action="#SoC-overview" method="post">
+
+              <!-- Set 1 -->
+              <fieldset class="govuk-fieldset" aria-describedby="favorite-color-hint">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend">
+                  Are you on track to meet regulation 7?
+                </legend>
+                <div class="govuk-radios" data-module="govuk-radios">
+                  <div class="govuk-radios__item">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="contact" name="contact" type="radio" value="email"
+                        data-aria-controls="conditional-contact">
+                      <label class="govuk-label govuk-radios__label" for="contact">
+                        Yes
+                      </label>
+                    </div>
+                  </div>
+
+            
+                  <div class="govuk-radios__conditional govuk-radios__conditional--hidden" id="conditional-contact">
+                    <div class="govuk-form-group">
+                      <label class="govuk-label" for="contact-by-email">
+                        Where can the evidence be found?
+                      </label>
+                      <div class="govuk-form-group govuk-character-count" data-module="govuk-character-count"
+                        data-maxwords="150">
+                        <textarea class="govuk-textarea govuk-js-character-count" id="word-count" name="wordCount"
+                          rows="5" aria-describedby="word-count-info"></textarea>
+                        <div id="word-count-info" class="govuk-hint govuk-character-count__message">
+                          You can enter up to 150 words
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="test-test" class="govuk-form-group govuk-visually-hidden">
+                    <label class="govuk-label" for="textarea">
+                      Can you provide more detail?
+                    </label>
+                    <textarea class="govuk-textarea" id="textarea" name="moreDetail" rows="5"></textarea>
+                  </div>
+
+                  <div class="govuk-radios" data-module="govuk-radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="red" name="favorite-color" type="radio" value="red">
+                      <label class="govuk-label govuk-radios__label" for="red">
+                        No
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+              <br><br>
+              <!---->
+
+              <!-- Set 2 -->
+              <fieldset class="govuk-fieldset" aria-describedby="transport-hint">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend">
+                  Are you seeking any advice on regulation 7 at gateway 2?
+                </legend>
+
+                <div class="govuk-radios" data-module="govuk-radios">
+                  <div class="govuk-radios__item">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="transport-other" name="preferred-transport" type="radio"
+                        value="other">
+                      <label class="govuk-label govuk-radios__label" for="transport-other">
+                        Yes 2
+                      </label>
+                    </div>
+                  </div>
+
+                  <div id="preferred-transport-other-text" class="govuk-form-group govuk-visually-hidden">
+                    <label class="govuk-label" for="preferred-transport-other">
+                      label for textarea
+                    </label>
+                    <textarea class="govuk-textarea" id="preferred-transport-other" name="preferred-transport-other"
+                      rows="5" spellcheck="false"></textarea>
+                  </div>
+
+                  <div class="govuk-radios" data-module="govuk-radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="transport-car" name="preferred-transport" type="radio"
+                        value="car">
+                      <label class="govuk-label govuk-radios__label" for="transport-car">
+                        No 2
+                      </label>
+                    </div>
+                  </div>
+                </div>
+              </fieldset>
+
+
+              <br><br>
+
+              <a href="SoC-overview" role="button" draggable="false" class="govuk-button govuk-button--start"
+                data-module="govuk-button">
+                Save
+
+              </a>
+
+
+
+
+
+            </form>
+          </div>
+        </body>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const radios = document.querySelectorAll('.govuk-radios__input');
+    radios.forEach(radio => {
+      radio.addEventListener('change', function () {
+        const groupName = this.name;
+        const value = this.value;
+        const textArea = document.getElementById(groupName + '-other-text');
+        if (value === 'other') {
+          textArea.classList.remove('govuk-visually-hidden');
+        } else {
+          textArea.classList.add('govuk-visually-hidden');
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+
+</html>
+
+
+
+
+
+
+
+{% endblock %}

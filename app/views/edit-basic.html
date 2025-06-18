@@ -1,0 +1,176 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+Regulation 1
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+
+
+        <h1 class="govuk-heading-l">
+          Regulation 7: [regulation to be complied with]
+        </h1>
+
+        <body class="govuk-template__body">
+          <div class="govuk-width-container">
+
+            <form action="#SoC-overview" method="post">
+
+
+
+              <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                  const radios = document.querySelectorAll('.govuk-radios__input');
+                  radios.forEach(radio => {
+                    radio.addEventListener('change', function () {
+                      const groupName = this.name;
+                      const value = this.value;
+                      const textArea = document.getElementById(groupName + '-other-text');
+                      if (value === 'other') {
+                        textArea.classList.remove('govuk-visually-hidden');
+                      } else {
+                        textArea.classList.add('govuk-visually-hidden');
+                      }
+                    });
+                  });
+                });
+              </script>
+
+              <!-- Set 1: progress -->
+              <fieldset class="govuk-fieldset" aria-describedby="favorite-color-hint">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend">
+                  Are you on track to meet regulation 7?
+                </legend>
+
+                <div class="govuk-radios" data-module="govuk-radios">
+
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="color-other" name="favorite-color" type="radio"
+                      value="other">
+                    <label class="govuk-label govuk-radios__label" for="color-other">
+                      Yes
+                    </label>
+                  </div>
+
+                  <div id="favorite-color-other-text" class="govuk-form-group govuk-visually-hidden">
+                    <label class="govuk-label" for="favorite-color-other">
+                      Please specify
+                    </label>
+                    <textarea class="govuk-textarea" id="favorite-color-other" name="favorite-color-other" rows="5"
+                      spellcheck="false"></textarea>
+                  </div>
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="color-red" name="favorite-color" type="radio" value="red">
+                    <label class="govuk-label govuk-radios__label" for="color-red">
+                      No
+                    </label>
+                  </div>
+                
+
+
+             
+              <br><br>
+
+              <!-- Set 2: Preferred Mode of Transport -->
+              <fieldset class="govuk-fieldset" aria-describedby="transport-hint">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend">
+                Are you seeking any advice on regulation 7?
+                </legend>
+                
+                <div class="govuk-radios" data-module="govuk-radios">
+                
+
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="transport-other" name="preferred-transport" type="radio"
+                      value="other">
+                    <label class="govuk-label govuk-radios__label" for="transport-other">
+                      Yes
+                    </label>
+                  </div>
+                    <div id="preferred-transport-other-text" class="govuk-form-group govuk-visually-hidden">
+                  <label class="govuk-label" for="preferred-transport-other">
+                    Please specify
+                  </label>
+                  <textarea class="govuk-textarea" id="preferred-transport-other" name="preferred-transport-other"
+                    rows="5" spellcheck="false"></textarea>
+                </div>
+
+                    <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="transport-car" name="preferred-transport" type="radio"
+                      value="car">
+                    <label class="govuk-label govuk-radios__label" for="transport-car">
+                      No
+                    </label>
+                  </div>
+
+                </div>
+                <div id="preferred-transport-other-text" class="govuk-form-group govuk-visually-hidden">
+                  <label class="govuk-label" for="preferred-transport-other">
+                    Please specify
+                  </label>
+                  <textarea class="govuk-textarea" id="preferred-transport-other" name="preferred-transport-other"
+                    rows="5" spellcheck="false"></textarea>
+                </div>
+              </fieldset>
+
+
+              <!--<script>
+            document.addEventListener('DOMContentLoaded', function () {
+              const radios = document.querySelectorAll('.govuk-radios__input');
+              radios.forEach(radio => {
+                radio.addEventListener('change', function () {
+                  const groupName = this.name;
+                  const value = this.value;
+                  const textArea = document.getElementById(groupName + '-other-text');
+                  if (value === 'other') {
+                    textArea.classList.remove('govuk-visually-hidden');
+                  } else {
+                    textArea.classList.add('govuk-visually-hidden');
+                  }
+                });
+              });
+            });
+          </script>
+        </body>
+
+        </html>-->
+
+
+              <br><br>
+
+              <a href="SoC-overview" role="button" draggable="false" class="govuk-button govuk-button--start"
+                data-module="govuk-button">
+                Save
+
+              </a>
+
+
+
+
+
+            </form>
+          </div>
+        </body>
+      </div>
+    </div>
+
+  </main>
+</div>
+
+
+
+
+
+
+
+
+
+{% endblock %}
