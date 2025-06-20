@@ -4,3 +4,18 @@
 // 
 
 // Add extra styles here
+
+// test scrollable table class
+.tablescroll {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+    
+}
+
+
+//.tablecellfixed {
+  //  display: block;
+   //column-width: 50px;
+  
+//}

@@ -1,0 +1,111 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+Regulation 1
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+
+
+        <h1 class="govuk-heading-l">
+          Regulation 1: [regulation to be complied with]
+        </h1>
+
+        <body class="govuk-template__body">
+          <div class="govuk-width-container">
+            <form action="#SoC-list-inprogress" method="post">
+
+              <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                  const radios = document.querySelectorAll('.govuk-radios__input');
+                  radios.forEach(radio => {
+                    radio.addEventListener('change', function () {
+                      const groupName = this.name;
+                      const value = this.value;
+                      const textArea = document.getElementById(groupName + '-other-text');
+                      if (value === 'other') {
+                        textArea.classList.remove('govuk-visually-hidden');
+                      } else {
+                        textArea.classList.add('govuk-visually-hidden');
+                      }
+                    });
+                  });
+                });
+              </script>
+
+              <!-- Set 1: progress -->
+              <div class="govuk-form-group">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="countries-5" name="countries" type="checkbox" value="none"
+                    data-behaviour="exclusive">
+                  <label class="govuk-label govuk-checkboxes__label" for="countries-5">I have met compliance with
+                    regulation 1</label>
+                </div>
+
+                <br>
+                <br>
+
+
+
+                <div id="preferred-transport-other-text" class="govuk-form-group">
+                  <label class="govuk-label" for="contact-by-email">
+                    Evidence summary
+                  </label>
+                  <div class="govuk-form-group govuk-character-count" data-module="govuk-character-count"
+                    data-maxwords="200">
+                    <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="withHint" rows="5"
+                      aria-describedby="with-hint-info with-hint-hint"></textarea>
+                    <div id="with-hint-info" class="govuk-hint govuk-character-count__message">
+                      You can enter up to 200 characters
+                    </div>
+                  </div>
+                </div>
+
+                <div></div>
+                <label class="govuk-label" for="contact-by-email">
+                  Where can the evidence be found?
+                </label>
+                <div><textarea class="govuk-textarea" id="more-detail" name="moreDetail" rows="5"
+                    aria-describedby="more-detail-hint"></textarea>
+                </div>
+
+
+              </div>
+
+
+          </div>
+
+
+          <br><br>
+
+          <a href="SoC-list-GW3-1-all" role="button" draggable="false" class="govuk-button govuk-button--start"
+            data-module="govuk-button">
+            Save
+          </a>
+
+          </form>
+      </div>
+      </body>
+    </div>
+</div>
+
+</main>
+</div>
+
+
+
+
+
+
+
+
+
+{% endblock %}
