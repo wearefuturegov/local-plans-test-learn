@@ -1,0 +1,248 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+Regulation 7
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+
+
+        <h1 class="govuk-heading-l">
+          Climate change effects: requirement 3
+        </h1>
+
+        <body class="govuk-template__body">
+          <div class="govuk-width-container">
+            <form action="#SoC-list-inprogress" method="post">
+
+              <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                  const radios = document.querySelectorAll('.govuk-radios__input');
+                  radios.forEach(radio => {
+                    radio.addEventListener('change', function () {
+                      const groupName = this.name;
+                      const value = this.value;
+                      const textArea = document.getElementById(groupName + '-other-text');
+                      if (value === 'other') {
+                        textArea.classList.remove('govuk-visually-hidden');
+                      } else {
+                        textArea.classList.add('govuk-visually-hidden');
+                      }
+                    });
+                  });
+                });
+              </script>
+
+
+              <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                  const radios = document.querySelectorAll('.govuk-radios__input');
+                  radios.forEach(radio => {
+                    radio.addEventListener('change', function () {
+                      const groupName = this.name;
+                      const value = this.value;
+                      const textArea = document.getElementById(groupName + '-other-blue');
+                      if (value === 'blue') {
+                        textArea.classList.remove('govuk-visually-hidden');
+                      } else {
+                        textArea.classList.add('govuk-visually-hidden');
+                      }
+                    });
+                  });
+                });
+              </script>
+
+              <!-- Set 1: progress -->
+              <fieldset class="govuk-fieldset" aria-describedby="favorite-color-hint">
+                <legend class="govuk-fieldset__legend govuk-fieldset__legend">
+                  The local plan must show how land use and development reduces the effect of, and adapt to, climate
+                  change.
+                  What is your current status in completing this requirement?
+                </legend>
+
+                <div class="govuk-radios" data-module="govuk-radios">
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="color-red" name="favorite-color" type="radio" value="red">
+                    <label class="govuk-label govuk-radios__label" for="color-red">
+                      Not started
+                    </label>
+                  </div>
+
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="color-other" name="favorite-color" type="radio"
+                      value="other">
+                    <label class="govuk-label govuk-radios__label" for="color-other">
+                      In progress
+                    </label>
+                  </div>
+
+                  <div id="favorite-color-other-text"
+                    class="govuk-form-group govuk-visually-hidden govuk-radios__conditional">
+
+
+                    <!--upload multiples-->
+                    <div class="govuk-form-group">
+                      <div>
+                       
+                        <label class="govuk-label govuk-label--s" for="file-upload-1">
+                          Upload evidence
+                        </label>
+
+                        <div id="file-upload-1-hint" class="govuk-hint">
+                          Upload your evidence so far, for example, a xxxxxxxx, xxxxxx or xxxxxxx.
+                        </div>
+                        <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file"
+                          aria-describedby="file-upload-1-hint">
+                      </div>
+ 
+                    </div>
+                 
+<a href="SoC2-edit-uploading" role="button" draggable="false" class="govuk-button govuk-button"
+  data-module="govuk-button">
+  Upload
+</a>
+
+<div class="govuk-form-group">
+  <label class="govuk-label govuk-label--s" for="event-name">
+    Evidence references
+  </label>
+  <div id="event-name-hint" class="govuk-hint">
+    For example, page number, subheading or section reference
+  </div>
+  <input class="govuk-input" id="event-name" name="eventName" type="text">
+  <br><br>
+</div>
+                  </div>
+                </div>
+          </div>
+
+
+          <!--end of multiple upload-->
+
+
+
+          <div class="govuk-radios__item">
+            <input class="govuk-radios__input" id="color-blue" name="favorite-color" type="radio" value="blue">
+            <label class="govuk-label govuk-radios__label" for="color-blue">
+              Completed
+            </label>
+          </div>
+
+          <div id="favorite-color-other-blue" class="govuk-form-group govuk-radios__conditional govuk-visually-hidden">
+
+
+            <!--upload multiples-->
+            <div class="govuk-form-group">
+              <div>
+                <br>
+                <label class="govuk-label govuk-label--s" for="file-upload-1">
+                  Upload evidence
+                </label>
+
+                <div id="file-upload-1-hint" class="govuk-hint">
+                  Upload your evidence so far, for example, a xxxxxxxx, xxxxxx or xxxxxxx.
+                </div>
+                <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file"
+                  aria-describedby="file-upload-1-hint">
+              </div>
+
+            </div>
+        
+<a href="SoC2-edit-uploading" role="button" draggable="false" class="govuk-button govuk-button"
+  data-module="govuk-button">
+  Upload
+</a>
+
+
+<div class="govuk-form-group">
+  <label class="govuk-label govuk-label--s" for="event-name">
+    Evidence references
+  </label>
+  <div id="event-name-hint" class="govuk-hint">
+    For example, page number, subheading or section reference
+  </div>
+  <input class="govuk-input" id="event-name" name="eventName" type="text">
+  <br><br>
+</div>
+          </div>
+      </div>
+    </div>
+
+
+</div>
+
+
+
+<!-- Set 2: Preferred Mode of Transport -->
+<fieldset class="govuk-fieldset" aria-describedby="transport-hint">
+  <legend class="govuk-fieldset__legend govuk-fieldset__legend">
+    Are there any specific matters about this regulation you're seeking advice for in relation to your
+    ability to comply with it at Gateway 3?
+  </legend>
+
+  <div class="govuk-radios" data-module="govuk-radios">
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="transport-other" name="preferred-transport" type="radio" value="other">
+      <label class="govuk-label govuk-radios__label" for="transport-other">
+        Yes
+      </label>
+    </div>
+
+    <div id="preferred-transport-other-text" class="govuk-form-group govuk-visually-hidden govuk-radios__conditional">
+
+      <label class="govuk-label" for="contact-by-email">
+        Details of specific matters to be discussed
+      </label>
+      <div class="govuk-form-group govuk-character-count" data-module="govuk-character-count" data-maxwords="200">
+        <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="withHint" rows="5"
+          aria-describedby="with-hint-info with-hint-hint"></textarea>
+        <div id="with-hint-info" class="govuk-hint govuk-character-count__message">
+          You can enter up to 200 characters
+        </div>
+      </div>
+    </div>
+
+
+
+    <div class="govuk-radios__item">
+      <input class="govuk-radios__input" id="transport-car" name="preferred-transport" type="radio" value="car">
+      <label class="govuk-label govuk-radios__label" for="transport-car">
+        No
+      </label>
+    </div>
+  </div>
+</fieldset>
+
+<br><br>
+
+<a href="SoC-list-Inprogress-1-all" role="button" draggable="false" class="govuk-button govuk-button--start"
+  data-module="govuk-button">
+  Save
+</a>
+
+</form>
+</div>
+</body>
+</div>
+</div>
+
+</main>
+</div>
+
+
+
+
+
+
+
+
+
+{% endblock %}

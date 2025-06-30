@@ -21,7 +21,7 @@ Regulation 7
 
         <body class="govuk-template__body">
           <div class="govuk-width-container">
-            <form action="#SoC2-list-inprogress" method="post">
+            <form action="#SoC-list-inprogress" method="post">
 
               <script>
                 document.addEventListener('DOMContentLoaded', function () {
@@ -59,6 +59,7 @@ Regulation 7
                 });
               </script>
 
+
               <!-- Set 1: progress -->
               <fieldset class="govuk-fieldset" aria-describedby="favorite-color-hint">
                 <legend class="govuk-fieldset__legend govuk-fieldset__legend">
@@ -83,14 +84,73 @@ Regulation 7
                     </label>
                   </div>
                   <div id="favorite-color-other-text" class="govuk-form-group govuk-visually-hidden">
-                    <label class="govuk-label" for="contact-by-email">
-                      Where can the evidence be found?
-                    </label>
-                    <div><textarea class="govuk-textarea" id="more-detail" name="moreDetail" rows="5"
-                        aria-describedby="more-detail-hint"></textarea>
+
+
+                    <!--upload multiples-->
+                    <div class="govuk-grid-row">
+                      <div class="govuk-grid-column-two-thirds">
+                        <h1 class="govuk-heading-s">Upload documents</h1>
+
+                        <div id="file-upload-1-hint" class="govuk-hint">
+                          You can upload your receipt as a scanned copy or photo of the original. The selected file must
+                          be smaller than 100MB.
+                        </div>
+
+                        <p class="govuk-body" aria-live="polite">1 of 2 files uploaded</p>
+
+                        <div class="govuk-form-group">
+                          <label class="govuk-label-s govuk-visually-hidden" for="file-upload-1">
+                            Upload receipts
+                          </label>
+                          <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+                        </div>
+
+                        <p class="govuk-body govuk-!-display-none" id="refreshPageProgress"><a href="#"
+                            class="govuk-link">Refresh page to update file upload progress</a></p>
+
+                        <dl class="govuk-summary-list govuk-summary-list--long-key">
+                          <div class="govuk-summary-list__row">
+                            <dt class="govuk-summary-list__key">
+                              receipt2.jpg
+                            </dt>
+                            <dd class="govuk-summary-list__value">
+                              <strong class="govuk-tag govuk-tag--yellow">
+                                Uploading
+                              </strong>
+
+                            </dd>
+                            <dd class="govuk-summary-list__actions">
+                              <a class="govuk-link" href="#">Remove<span class="govuk-visually-hidden">
+                                  receipt2.jpg</span></a>
+                            </dd>
+                          </div>
+                          <div class="govuk-summary-list__row">
+                            <dt class="govuk-summary-list__key">
+                              <a class="govuk-link" href="#">receipt1.jpg</a>
+                            </dt>
+                            <dd class="govuk-summary-list__value">
+                              <strong class="govuk-tag govuk-tag--green">
+                                Uploaded
+                              </strong>
+
+                            </dd>
+                            <dd class="govuk-summary-list__actions">
+                              <a class="govuk-link" href="#">Remove<span class="govuk-visually-hidden">
+                                  receipt1.jpg</span></a>
+                            </dd>
+                          </div>
+                        </dl>
+
+                        <button type="submit" class="govuk-button" data-module="govuk-button">
+                          Continue
+                        </button>
+                      </div>
                     </div>
                   </div>
 
+                  <!--end of multiple upload-->
+
+                  
                   <div class="govuk-radios__item">
                     <input class="govuk-radios__input" id="color-blue" name="favorite-color" type="radio" value="blue">
                     <label class="govuk-label govuk-radios__label" for="color-blue">
@@ -107,17 +167,9 @@ Regulation 7
                   </div>
 
 
-                  <!-- <div class="govuk-radios__item">
-                    <input class="govuk-radios__input" id="color-red" name="favorite-color" type="radio" value="red">
-                    <label class="govuk-label govuk-radios__label" for="color-red">
-                      Completed
-                    </label>
-                  </div>-->
-
-
                   <br><br>
 
-                  <!-- Set 2: discusssion topics -->
+                  <!-- Set 2: discussion topics -->
                   <fieldset class="govuk-fieldset" aria-describedby="transport-hint">
                     <legend class="govuk-fieldset__legend govuk-fieldset__legend">
                       Are there any specific matters about this regulation you're seeking advice for in relation to your
