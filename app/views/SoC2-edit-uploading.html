@@ -94,7 +94,7 @@ Regulation 7
                           Upload evidence
                         </label>
                         <div id="file-upload-1-hint" class="govuk-hint">
-                          Upload your evidence so far, for example, a xxxxxxxx, xxxxxx or xxxxxxx.
+                          Upload any documents showing what evidence you currently have towards meeting this requirement.
                         </div>
                         <p class="govuk-body" aria-live="polite">1 of 1 file uploading</p>
 
@@ -102,8 +102,8 @@ Regulation 7
                             class="govuk-link">Refresh page to update file upload progress</a></p>
                         <dl class="govuk-summary-list govuk-summary-list--long-key">
                           <div class="govuk-summary-list__row">
-                           
-                              <dt>
+
+                            <dt>
                               document1.pdf
                             </dt>
                             <dd class="govuk-summary-list__value">
@@ -117,18 +117,18 @@ Regulation 7
                             </dd>
                           </div>
                         </dl>
-                        <br>
-                        <label class=" govuk-label govuk-label--s" for="file-upload-1">
+                       
+                        <!--<label class=" govuk-label govuk-label--s" for="file-upload-1">
                           Upload another file?
                         </label>
                         <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file"
-                          aria-describedby="file-upload-1-hint">
+                          aria-describedby="file-upload-1-hint">-->
                       </div>
 
                     </div>
 
-                    <a href="SoC2-edit-upload-another" role="button" draggable="false" class="govuk-button govuk-button--secondary"
-                      data-module="govuk-button">
+                    <a href="SoC2-edit-upload-another" role="button" draggable="false"
+                      class="govuk-button govuk-button--secondary" data-module="govuk-button">
                       Upload
                     </a>
 
@@ -138,133 +138,141 @@ Regulation 7
                         Evidence references
                       </label>
                       <div id="event-name-hint" class="govuk-hint">
-                        For example, page number, subheading or section reference
+                       State the page and paragraph numbers in each document you upload so the evidence is easily found.
+                      </div>
+                      <input class="govuk-input" id="event-name" name="eventName" type="text">
+                      <br>
+                    </div>
+<label class=" govuk-label govuk-label--s" for="file-upload-1">
+                          Upload another file?
+                        </label>
+                        <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file"
+                          aria-describedby="file-upload-1-hint">
+ <br><br>
+
+
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-label--s" for="contact-by-email">
+                        Progress summary </label>
+<div id="event-name-hint" class="govuk-hint">
+                       If you have no evidence to upload, explain what you have done so far.
+                      </div>
+                      <div class="govuk-form-group govuk-character-count" data-module="govuk-character-count"
+                        data-maxwords="100">
+                        <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="withHint"
+                          rows="5" aria-describedby="with-hint-info with-hint-hint"></textarea>
+                        <div id="with-hint-info" class="govuk-hint govuk-character-count__message">
+                          You can enter up to 100 characters
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                  <!--end of multiple upload-->
+
+                  <div class="govuk-radios__item">
+                    <input class="govuk-radios__input" id="color-blue" name="favorite-color" type="radio" value="blue">
+                    <label class="govuk-label govuk-radios__label" for="color-blue">
+                      Completed
+                    </label>
+                  </div>
+
+                  <div id="favorite-color-other-blue"
+                    class="govuk-form-group govuk-radios__conditional govuk-visually-hidden">
+
+
+                    <!--upload multiples-->
+                    <div class="govuk-form-group">
+                      <div>
+                        <br>
+                        <label class="govuk-label govuk-label--s" for="file-upload-1">
+                          Upload documents
+                        </label>
+
+                        <div id="file-upload-1-hint" class="govuk-hint">
+                           Upload any documents showing what evidence you currently have towards meeting this requirement.
+                        </div>
+                        <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file"
+                          aria-describedby="file-upload-1-hint">
+                      </div>
+
+                    </div>
+
+                    <a href="SoC2-edit-uploading.html" role="button" draggable="false"
+                      class="govuk-button govuk-button--secondary" data-module="govuk-button">
+                      Upload
+                    </a>
+
+                    <div class="govuk-form-group">
+                      <label class="govuk-label govuk-label--s" for="event-name">
+                        Evidence references
+                      </label>
+                      <div id="event-name-hint" class="govuk-hint">
+                        State the page and paragraph numbers in each document you upload so the evidence is easily found.
                       </div>
                       <input class="govuk-input" id="event-name" name="eventName" type="text">
                       <br><br>
                     </div>
-                  
-              
-    <div class="govuk-form-group">
-      <label class="govuk-label govuk-label--s" for="contact-by-email">
-        Progress summary </label>
-        <div id="event-name-hint" class="govuk-hint">
-        (if there is no evidence to upload yet)
-    </div>
-      <div class="govuk-form-group govuk-character-count" data-module="govuk-character-count" data-maxwords="100">
-        <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="withHint" rows="5"
-          aria-describedby="with-hint-info with-hint-hint"></textarea>
-        <div id="with-hint-info" class="govuk-hint govuk-character-count__message">
-          You can enter up to 100 characters
-        </div>
-      </div>
-  </div>
-
-</div>
-                <!--end of multiple upload-->
-
-                <div class="govuk-radios__item">
-                  <input class="govuk-radios__input" id="color-blue" name="favorite-color" type="radio" value="blue">
-                  <label class="govuk-label govuk-radios__label" for="color-blue">
-                    Completed
-                  </label>
-                </div>
-
-                <div id="favorite-color-other-blue"
-                  class="govuk-form-group govuk-radios__conditional govuk-visually-hidden">
-
-
-                  <!--upload multiples-->
-                  <div class="govuk-form-group">
-                    <div>
-                      <br>
-                      <label class="govuk-label govuk-label--s" for="file-upload-1">
-                        Upload documents
-                      </label>
-
-                      <div id="file-upload-1-hint" class="govuk-hint">
-                        Upload your evidence so far, for example, a xxxxxxxx, xxxxxx or xxxxxxx.
-                      </div>
-                      <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file"
-                        aria-describedby="file-upload-1-hint">
-                    </div>
-
-                  </div>
-
-                  <a href="SoC2-edit-uploading.html" role="button" draggable="false" class="govuk-button govuk-button--secondary"
-                    data-module="govuk-button">
-                    Upload
-                  </a>
-
-                  <div class="govuk-form-group">
-                      <label class="govuk-label govuk-label--s" for="event-name">
-                      Evidence references
-                    </label>
-                    <div id="event-name-hint" class="govuk-hint">
-                      For example, page number, subheading or section reference
-                    </div>
-                    <input class="govuk-input" id="event-name" name="eventName" type="text">
-                    <br><br>
                   </div>
                 </div>
           </div>
       </div>
+
     </div>
-
-</div>
-<!--end of multiple upload-->
+    <!--end of multiple upload-->
 
 
 
 
-<!-- Set 2: specific matters -->
-<fieldset class="govuk-fieldset" aria-describedby="transport-hint">
-  <legend class="govuk-fieldset__legend govuk-fieldset__legend">
-    Are there any specific matters about this regulation you're seeking advice for in relation to your
-    ability to comply with it at Gateway 3?
-  </legend>
+    <!-- Set 2: specific matters -->
+    <br><br>
+    <fieldset class="govuk-fieldset" aria-describedby="transport-hint">
+      <legend class="govuk-fieldset__legend govuk-fieldset__legend">
+        Are you seeking advice about any matters in this requirement so you can comply with it at Gateway 3?
+      </legend>
 
-  <div class="govuk-radios" data-module="govuk-radios">
-    <div class="govuk-radios__item">
-      <input class="govuk-radios__input" id="transport-other" name="preferred-transport" type="radio" value="other">
-      <label class="govuk-label govuk-radios__label" for="transport-other">
-        Yes
-      </label>
-    </div>
+      <div class="govuk-radios" data-module="govuk-radios">
+        <div class="govuk-radios__item">
+          <input class="govuk-radios__input" id="transport-other" name="preferred-transport" type="radio" value="other">
+          <label class="govuk-label govuk-radios__label" for="transport-other">
+            Yes
+          </label>
+        </div>
 
-    <div id="preferred-transport-other-text" class="govuk-form-group govuk-visually-hidden govuk-radios__conditional">
+        <div id="preferred-transport-other-text"
+          class="govuk-form-group govuk-visually-hidden govuk-radios__conditional">
 
-      <label class="govuk-label govuk-label--s" for="contact-by-email">
-        Details of specific matters to be discussed
-      </label>
-      <div class="govuk-form-group govuk-character-count" data-module="govuk-character-count" data-maxwords="200">
-        <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="withHint" rows="5"
-          aria-describedby="with-hint-info with-hint-hint"></textarea>
-        <div id="with-hint-info" class="govuk-hint govuk-character-count__message">
-          You can enter up to 200 characters
+          <label class="govuk-label govuk-label--s" for="contact-by-email">
+            Details of specific matters to be discussed
+          </label>
+          <div class="govuk-form-group govuk-character-count" data-module="govuk-character-count" data-maxwords="200">
+            <textarea class="govuk-textarea govuk-js-character-count" id="with-hint" name="withHint" rows="5"
+              aria-describedby="with-hint-info with-hint-hint"></textarea>
+            <div id="with-hint-info" class="govuk-hint govuk-character-count__message">
+              You can enter up to 200 characters
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-  </div>
 
 
-  <div class="govuk-radios__item">
-    <input class="govuk-radios__input" id="transport-car" name="preferred-transport" type="radio" value="car">
-    <label class="govuk-label govuk-radios__label" for="transport-car">
-      No
-    </label>
-  </div>
+      <div class="govuk-radios__item">
+        <input class="govuk-radios__input" id="transport-car" name="preferred-transport" type="radio" value="car">
+        <label class="govuk-label govuk-radios__label" for="transport-car">
+          No
+        </label>
+      </div>
 
-</fieldset>
+    </fieldset>
 
-<br><br>
+    <br><br>
 
-<a href="SoC2-list-inprogress.html" role="button" draggable="false" class="govuk-button govuk-button"
-  data-module="govuk-button">
-  Save
-</a>
+    <a href="SoC2-list-inprogress.html" role="button" draggable="false" class="govuk-button govuk-button"
+      data-module="govuk-button">
+      Save
+    </a>
 
-</form>
+    </form>
 </div>
 </body>
 </div>
