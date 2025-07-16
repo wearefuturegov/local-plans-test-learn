@@ -1,0 +1,92 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+Regulation 7
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+
+
+        
+
+        <body class="govuk-template__body">
+          <div class="govuk-width-container">
+            <form action="#SoC3-edit-reg4" method="post">
+
+
+
+              <!--upload multiples-->
+         
+              <div class="govuk-form-group">
+                <div>
+<h1 class="govuk-heading-l">
+          
+      
+                  <label class="govuk-label govuk-label--l" for="file-upload-1">
+                    Upload evidence
+                  </label>  </h1>
+
+                  <div id="file-upload-1-hint" class="govuk-hint">
+                    Upload any documents showing what evidence you currently have towards meeting this requirement.
+                  </div>
+                  <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file"
+                    aria-describedby="file-upload-1-hint">
+                </div>
+
+              </div>
+
+              <a href="SoC3-edit-uploading" role="button" draggable="false" class="govuk-button govuk-button--secondary"
+                data-module="govuk-button">
+                Upload
+              </a>
+
+              <div class="govuk-form-group">
+                <label class="govuk-label govuk-label--s" for="event-name">
+                  Evidence references
+                </label>
+                <div id="event-name-hint" class="govuk-hint">
+                  State the page and paragraph numbers in each document you upload so the evidence is easily found.
+                </div>
+                <input class="govuk-input" id="event-name" name="eventName" type="text">
+                <br><br>
+              </div>
+          </div>
+      </div>
+ </div>
+ 
+
+    <!--end of multiple upload-->
+
+<br><br>
+
+<a href="SoC3-edit-reg4.html" role="button" draggable="false" class="govuk-button govuk-button"
+  data-module="govuk-button">
+  Save
+</a>
+
+</form>
+</div>
+</body>
+</div>
+</div>
+
+</main>
+</div>
+
+
+
+
+
+
+
+
+
+{% endblock %}

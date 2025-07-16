@@ -151,3 +151,20 @@ router.post('/11-section', function(request, response) {
       //  response.redirect("/4-section")
     //}
 //})
+
+// Run this code when a form is submitted to 'juggling-balls-answer'
+router.post('/docsToUpload', function (req, res) {
+
+  // Make a variable and give it the value from 'how-many-balls'
+  var howManyBalls = req.session.data['documentsToUpload']
+
+  // Check whether the variable matches a condition
+  if (howManyBalls == "uploadDocs"){
+    // Send user to next page
+    res.redirect('/SoC3-edit-reg2')
+  } else {
+    // Send user to ineligible page
+    res.redirect('/SoC3-edit-reg3')
+  }
+
+})

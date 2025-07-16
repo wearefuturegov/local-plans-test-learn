@@ -1,0 +1,117 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+Regulation 1
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+
+
+        <h1 class="govuk-heading-l">
+          Requirement 1: Policies for the local plan
+        </h1>
+
+        <body class="govuk-template__body">
+          <div class="govuk-width-container">
+            <form action="#SoC-list-inprogress" method="post">
+
+              <script>
+                document.addEventListener('DOMContentLoaded', function () {
+                  const radios = document.querySelectorAll('.govuk-radios__input');
+                  radios.forEach(radio => {
+                    radio.addEventListener('change', function () {
+                      const groupName = this.name;
+                      const value = this.value;
+                      const textArea = document.getElementById(groupName + '-other-text');
+                      if (value === 'other') {
+                        textArea.classList.remove('govuk-visually-hidden');
+                      } else {
+                        textArea.classList.add('govuk-visually-hidden');
+                      }
+                    });
+                  });
+                });
+              </script>
+
+              <!-- Set 1: progress -->
+              <div class="govuk-form-group">
+                <div class="govuk-checkboxes__item">
+                  <input class="govuk-checkboxes__input" id="countries-5" name="countries" type="checkbox" value="none"
+                    data-behaviour="exclusive">
+                  <label class="govuk-label govuk-checkboxes__label" for="countries-5">I have met compliance with
+                    requirement 1</label>
+                </div>
+
+                <br>
+                <br>
+
+
+            <!--upload multiples-->
+            <div class="govuk-form-group">
+              <div>
+                <br>
+                <label class="govuk-label govuk-label--s" for="file-upload-1">
+                  Upload evidence
+                </label>
+
+                <div id="file-upload-1-hint" class="govuk-hint">
+                  Upload a document showing how you have met the requirement.
+                </div>
+                <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file"
+                  aria-describedby="file-upload-1-hint">
+              </div>
+
+            </div>
+
+            <a href="#" role="button" draggable="false" class="govuk-button govuk-button--secondary"
+              data-module="govuk-button">
+              Upload
+            </a>
+
+
+            <div class="govuk-form-group">
+              <label class="govuk-label govuk-label--s" for="event-name">
+                Evidence references
+              </label>
+              <div id="event-name-hint" class="govuk-hint">
+                State the page and paragraph numbers in each document you upload so the evidence is easily found.
+              </div>
+              <input class="govuk-input" id="event-name" name="eventName" type="text">
+              <br><br>
+            </div>
+          </div>
+      </div>
+    </div>
+    </div>
+          <br><br>
+
+          <a href="SoC2-list-GW3-inprogress" role="button" draggable="false" class="govuk-button govuk-button" data-module="govuk-button">
+            Save
+          </a>
+
+          </form>
+      </div>
+      </body>
+    </div>
+</div>
+
+</main>
+</div>
+
+
+
+
+
+
+
+
+
+{% endblock %}

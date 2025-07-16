@@ -1,0 +1,86 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+Regulation 7
+{% endblock %}
+
+{% block content %}
+
+
+<div class="govuk-width-container">
+  <a href="javascript:history.back()" class="govuk-back-link">Back</a>
+  <main class="govuk-main-wrapper " id="main-content" role="main">
+    <div class="govuk-grid-row">
+      <div class="govuk-grid-column-two-thirds">
+
+
+
+        <h1 class="govuk-heading-l">
+          Climate change effects: requirement 3
+        </h1>
+
+        <body class="govuk-template__body">
+          <div class="govuk-width-container">
+            <form action="/docstoupload" method="post">
+
+      
+
+              <!-- Set 1: progress -->
+
+              <div class="govuk-form-group">
+                <fieldset class="govuk-fieldset">
+                  <legend class="govuk-fieldset__legend">
+                    The local plan must show how land use and development reduces the effect of, and adapt to, climate
+                    change. <br><br>
+                    Have you progressed towards compliance with this requirement?
+                  </legend>
+                  <div class="govuk-radios" data-module="govuk-radios">
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="docs" name="documentsToUpload" type="radio"
+                        value="uploadDocs">
+                      <label class="govuk-label govuk-radios__label" for="whereDoYouLive">
+                        Yes and I have document(s) to upload showing evidence so far
+                      </label>
+                    </div>
+                    <div class="govuk-radios__item">
+                      <input class="govuk-radios__input" id="docs-2" name="documentsToUpload" type="radio"
+                        value="noDocs">
+                      <label class="govuk-label govuk-radios__label" for="whereDoYouLive-2">
+                        Yes but I don't have documents to upload
+                      </label>
+                    </div>
+
+                  </div>
+                </fieldset>
+              </div>
+
+           
+
+              <br><br>
+              <div class="govuk-button-group">
+                <button type="submit" class="govuk-button" data-module="govuk-button">
+                  Continue
+                </button>
+                <a class="govuk-link" href="#">Cancel</a>
+              </div>
+
+
+    
+          </form>
+  
+      </body>
+    </div>
+</div>
+
+</main>
+</div>
+
+
+
+
+
+
+
+
+
+{% endblock %}
