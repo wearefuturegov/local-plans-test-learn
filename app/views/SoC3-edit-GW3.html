@@ -21,25 +21,8 @@ Regulation 1
 
         <body class="govuk-template__body">
           <div class="govuk-width-container">
-            <form action="#SoC-list-inprogress" method="post">
+            <form action="#SoC3-GW3-confirmation" method="post">
 
-              <script>
-                document.addEventListener('DOMContentLoaded', function () {
-                  const radios = document.querySelectorAll('.govuk-radios__input');
-                  radios.forEach(radio => {
-                    radio.addEventListener('change', function () {
-                      const groupName = this.name;
-                      const value = this.value;
-                      const textArea = document.getElementById(groupName + '-other-text');
-                      if (value === 'other') {
-                        textArea.classList.remove('govuk-visually-hidden');
-                      } else {
-                        textArea.classList.add('govuk-visually-hidden');
-                      }
-                    });
-                  });
-                });
-              </script>
 
               <!-- Set 1: progress -->
               <div class="govuk-form-group">
@@ -93,7 +76,7 @@ Regulation 1
     </div>
           <br><br>
 
-          <a href="SoC2-list-GW3-inprogress" role="button" draggable="false" class="govuk-button govuk-button" data-module="govuk-button">
+          <a href="SoC3-GW3-confirmation" role="button" draggable="false" class="govuk-button govuk-button" data-module="govuk-button">
             Save
           </a>
 
