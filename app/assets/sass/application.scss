@@ -49,9 +49,8 @@ padding-left: 20px;
 
 .my-hr {
   width: 250px;
-  border-color: rgb(47, 140, 227);
-  border-width: 3px;
-  margin-left: 0px;
+  padding-top: govuk-spacing(1);
+  border-top: 5px solid govuk-colour('blue')
 
 }
 //.tablecellfixed {
