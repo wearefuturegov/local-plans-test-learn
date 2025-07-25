@@ -49,8 +49,9 @@ padding-left: 20px;
 
 .my-hr {
   width: 250px;
-  padding-top: govuk-spacing(1);
-  border-top: 5px solid govuk-colour('blue')
+  //padding-top: govuk-spacing(1);
+  border-top: 5px solid govuk-colour('blue');
+margin-left: 0px;
 
 }
 //.tablecellfixed {
