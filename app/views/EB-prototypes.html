@@ -1,0 +1,140 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+Start - {{ serviceName }}
+{% endblock %}
+
+{% block content %}
+
+<main class="govuk-main-wrapper " id="main-content" role="main">
+  <div class="govuk-grid-row">
+    <div class="govuk-grid-column-two-thirds">
+<span class="govuk-caption-xl">Local Plans</span>
+<h1 class="govuk-heading-xl">Evidence base prototypes</h1>
+   <h2 class="govuk-heading-l">Statement of compliance</h2>
+<table class="govuk-table">
+      <!-- <caption class="govuk-table__caption govuk-table__caption--l">Prototype versions</caption> -->
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Version</th>
+          <th scope="col" class="govuk-table__header">Status</th>
+          <th scope="col" class="govuk-table__header">Description</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+
+        <tr class="govuk-table__row">
+           <th scope="row" class="govuk-table__header">
+            <a class="govuk-link--no-visited-state" href="https://local-plans-test-learn-edfa4d960c40.herokuapp.com/SoC3-list-start">Version&nbsp;3</a>
+          </th>
+          <td class="govuk-table__cell">
+            <strong class="govuk-tag govuk-tag--yellow govuk-!-margin-bottom-1">
+              Untested
+            </strong><br>
+           
+          </td>
+          <td class="govuk-table__cell">
+            Iterated on prototype 2 - interaction changes after usability testing with LPAs
+          </td>
+        </tr>
+
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header"><a class="govuk-link--no-visited-state" href="https://local-plans-test-learn-edfa4d960c40.herokuapp.com/SoC2-list-start">Version&nbsp;2</a></th>
+          <td class="govuk-table__cell">
+            <strong class="govuk-tag govuk-tag--green govuk-!-margin-bottom-1">
+              Tested
+            </strong><br>
+            8 - 9 July
+          </td>
+          <td class="govuk-table__cell">
+            Version 2 for LPA usability testing (iterated on prototype 1 after PINs focus groups)
+          </td>
+        </tr>
+
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header"><a class="govuk-link--no-visited-state" href="https://local-plans-test-learn-edfa4d960c40.herokuapp.com/SoC-list-start-all">Version&nbsp;1</a></th>
+          <td class="govuk-table__cell">
+            <strong class="govuk-tag govuk-tag--green govuk-!-margin-bottom-1">
+              Tested
+            </strong><br>
+            23 - 24 June
+          </td>
+          <td class="govuk-table__cell">
+            Version 1 for PINs focus group 
+          </td>
+        </tr>
+
+</table>
+
+<br>
+
+       <h2 class="govuk-heading-l">Decision tree</h2>
+<table class="govuk-table">
+      <!-- <caption class="govuk-table__caption govuk-table__caption--l">Prototype versions</caption> -->
+      <thead class="govuk-table__head">
+        <tr class="govuk-table__row">
+          <th scope="col" class="govuk-table__header">Version</th>
+          <th scope="col" class="govuk-table__header">Status</th>
+          <th scope="col" class="govuk-table__header">Description</th>
+        </tr>
+      </thead>
+      <tbody class="govuk-table__body">
+
+        <tr class="govuk-table__row">
+           <th scope="row" class="govuk-table__header">
+            <a class="govuk-link--no-visited-state" href="https://local-plans-test-learn-edfa4d960c40.herokuapp.com/index">Version&nbsp;1</a>
+          </th>
+          <td class="govuk-table__cell">
+            <strong class="govuk-tag govuk-tag--yellow govuk-!-margin-bottom-1">
+              Untested
+            </strong><br>
+           
+          </td>
+          <td class="govuk-table__cell">
+            Iterated on prototype 2 - interaction changes after usability testing with LPAs
+          </td>
+        </tr>
+
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header"><a class="govuk-link--no-visited-state" href="https://local-plans-test-learn-edfa4d960c40.herokuapp.com/review">Results&nbsp;page version&nbsp;1</a></th>
+          <td class="govuk-table__cell">
+            <strong class="govuk-tag govuk-tag--green govuk-!-margin-bottom-1">
+              Tested
+            </strong><br>
+            1 May
+          </td>
+          <td class="govuk-table__cell">
+            Version 1 - tested alongside the decision tree questions
+          </td>
+        </tr>
+
+        <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header"><a class="govuk-link--no-visited-state" href="https://local-plans-test-learn-edfa4d960c40.herokuapp.com/results-accordion">Results&nbsp;page&nbsp;accordion</a></th>
+          <td class="govuk-table__cell">
+            <strong class="govuk-tag govuk-tag--green govuk-!-margin-bottom-1">
+              Tested
+            </strong><br>
+            28 - 31 July
+          </td>
+          <td class="govuk-table__cell">
+            Version 2A - accordion results page for usability testing
+          </td>
+        </tr>
+
+      <tr class="govuk-table__row">
+          <th scope="row" class="govuk-table__header"><a class="govuk-link--no-visited-state" href="https://local-plans-test-learn-edfa4d960c40.herokuapp.com/results-all">Results&nbsp;page&nbsp;flat</a></th>
+          <td class="govuk-table__cell">
+            <strong class="govuk-tag govuk-tag--green govuk-!-margin-bottom-1">
+              Tested
+            </strong><br>
+            28 - 31 July
+          </td>
+          <td class="govuk-table__cell">
+            Version 2B - flat results page for usability testing
+          </td>
+        </tr>
+
+    </div>
+  </div>
+</main>
+{% endblock %}
