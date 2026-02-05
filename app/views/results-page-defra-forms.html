@@ -1,0 +1,292 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+Results - {{ serviceName }}
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+    <a href="check-answers-defra-forms" class="govuk-back-link">Back</a>
+    <!--<a href="javascript:history.back()" class="govuk-back-link">Back</a>-->
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+        <div class="govuk-grid-row">
+
+            <div class="govuk-grid-column-one-third" style="padding-bottom: 1cm;">
+                <hr class="my-hr">
+                <h3 class="govuk-heading-s">Actions</h3>
+                <p><a href="#">Email these results</a></p>
+                <p><a href="#">Download these results</a></p>
+                <br>
+                <hr class="my-hr">
+                <h3 class="govuk-heading-s">Helpful resources</h3>
+                <p><a href="#">Budget guidance</a></p>
+                <p><a href="#">Indicative study costs</a></p>
+                <p><a href="#">Indicative study duration</a></p>
+                <p><a href="#">Checking a study is in date</a></p>
+                <p><a href="#">Steps to commission studies</a></p>
+                <p><a href="#">Order of study commissioning</a></p>
+
+
+
+
+
+            </div>
+
+            <div class="govuk-grid-column-two-thirds">
+
+
+                <h1 class="govuk-heading-l">
+                    Your results
+                </h1>
+                <p class="govuk-body">
+                    Use your results as a guide, especially if you're still early in your plan-making. You should
+                    confirm
+                    your final list of evidence with the Planning Inspectorate at Gateway 2. </p>
+
+                <h2 class="govuk-heading-m">
+                    Core evidence to include
+                </h2>
+
+                <div class="govuk-warning-text">
+                    <span class="govuk-warning-text__icon" aria-hidden="true">!</span>
+                    <strong class="govuk-warning-text__text">
+                    <span class="govuk-visually-hidden">Warning</span>
+                     All Local Authority planners must submit the following in-date studies in order to have plans be found to be sound
+                    </strong>
+                    </div>
+
+                
+
+                <h3 class="govuk-heading-s">1. Plan making and strategy core evidence</h3>
+                <ul class="govuk-list govuk-list--bullet">
+                    <li> <a href="#"> Growth and spatial strategy</a>, informed by:</li>
+                    <ul>
+                        <li>Spatial options</li>
+                    </ul>
+
+                    <li><a href="#">Statement of community involvement</a></li>
+                    <li><a href="#">Equalities Impact Assessment (EQIA)</a></li>
+                    <li><a href="#">Development Conformity Note</a></li>
+                    <li><a href="#">Habitats Regulations Assessment (HRA)</a></li>
+                    <li><a href="#">Local Plan Viability</a></li>
+                    <li><a href="#">Environmental Assessment</a></li>
+                    <li><a href="#">Statements of common ground</a></li>
+                </ul>
+
+                <h3 class="govuk-heading-s">2. Housing and residential core evidence</h3>
+                <ul class="govuk-list govuk-list--bullet">
+                    <li><a href="#">Housing and economic study</a>, informed by:</li>
+                    <ul>
+                        <li>Strategic housing market assessment (SHMA)</li>
+                        <li>Housing economic land availability assessment (HELAA)</li>
+                        <li>Housing trajectory and land supply study</li>
+                        <li>Housing delivery study</li>
+                        <li>Housing needs of Gypsies, Travellers and Travelling show people</li>
+                         <li>Employment land review (ELR)</li>
+                    </ul>
+
+                    <!--absorbed studies as a details component, if not included in guidance from the core study link
+                <details class="govuk-details indented">
+                    <summary class="govuk-details__summary">
+                        <span class="govuk-details__summary-text">
+                            Studies absorbed by the above
+                        </span>
+                    </summary>
+
+                    <div class="govuk-details__text">
+                        <ul class="govuk-list govuk-list--bullet">
+                            <li>Housing economic development needs assessment</li>
+                            <li>Assess local housing needs</li>
+                            <li>Housing in multiple occupation (HMO) study</li>
+                            <li>Affordable housing study</li>
+                            <li>Strategic housing land availability assessment (SHLAA)</li>
+                            <li>Windfall study</li>
+                        </ul>
+                    </div>
+                </details>-->
+
+                    <li><a href="#">Site selection methodology and site allocations</a></li>
+                </ul>
+
+                <!--<h3 class="govuk-heading-s">Economy and employment</h3>
+                <ul class="govuk-list govuk-list--bullet">
+                    <li><a href="#">Housing & economic study</a>, informed by:</li>
+                    <ul>
+                        <li>Employment land review (ELR)</li>
+                        <li>Housing economic land availability assessment (HELAA)</li>
+                    </ul>
+
+                    <li><a
+                            href="https://www.figma.com/proto/cSgUTztlijSmccSSt7uCMv/Site-Identification?node-id=456-14472&starting-point-node-id=456%3A14472">Site
+                            selection methodology and site allocations</a></li>
+                </ul>-->
+
+         
+                <h3 class="govuk-heading-s">3. Built design and heritage core evidence</h3>
+                <ul class="govuk-list govuk-list--bullet">
+
+                    <li><a href="#">Urban design and capacity study</a></li>
+                    <!--absorbed studies as a details component if not included in guidance from the core study link
+                     <details class="govuk-details">
+                    <summary class="govuk-details__summary">
+                        <span class="govuk-details__summary-text">
+                            Studies absorbed by the above
+                        </span>
+                    </summary>
+
+                    <div class="govuk-details__text">
+                        <ul class="govuk-list govuk-list--bullet">
+                            <li>Urban character study</li>
+                            <li>Tall buildings thresholds study</li>                          
+                        </ul>
+                    </div>
+                </details>-->
+                    <li><a href="#">Design codes</a></li>
+                    <li><a href="#">Heritage impact assessment</a></li>
+                    <li><a href="#">Archaeology assessment</a></li>
+                    <li><a href="#">Archaeological site assessment</a></li>
+
+                </ul>
+
+                <h3 class="govuk-heading-s">4. Natural environment and open land core evidence</h3>
+                <ul class="govuk-list govuk-list--bullet">
+                    <li><a href="#">Flood risk assessment</a>, informed by:</li>
+                    <ul>
+                        <li>Strategic flood risk assessment (level 1)</li>
+                    </ul>
+                    <li><a href="#">Water cycle study</a></li>
+                    <!--<li><a href="#">Character study</a></li>-->
+                    <li><a href="#">Green and blue infrastructure strategy</a></li>
+                    <li><a href="#">Create biodiversity action plan</a></li>
+                    <li><a href="#">Bio net gain (BNG) study</a></li>
+                    <li><a href="#">Climate change study</a>, informed by:</li>
+                    <ul>
+                        <li>Net zero evidence</li>
+                        <li>Air quality management plan</li>
+                        <li>Renewable energy study</li>
+                        <li>Carbon emmissions study</li>
+                    </ul>
+                </ul>
+
+                <h3 class="govuk-heading-s">5. Culture, leisure and tourism core evidence</h3>
+                <ul class="govuk-list govuk-list--bullet">
+                    <li><a href="#">Retail, leisure and tourism study</a>, informed by:</li>
+                    <ul>
+                        <li>Retail / town centre boundary study</li>
+                    </ul>
+                    <li><a href="#">Open space and recreation study</a>, informed by:</li>
+                    <ul>
+                        <li>Playing pitch and outdoor sport strategy</li>
+                        <li>Indoor sport facility strategy</li>
+                    </ul>
+                </ul>
+
+                <h3 class="govuk-heading-s">6. Community services and health core evidence</h3>
+                <ul class="govuk-list govuk-list--bullet">
+                    <li><a href="#">Community facilities review</a></li>
+                </ul>
+
+                <h3 class="govuk-heading-s">7. Transport and infrastructure core evidence</h3>
+                <ul class="govuk-list govuk-list--bullet">
+                    <li><a href="#">Infrastructure strategy</a>, informed by:</li>
+                    <ul>
+                        <li>Infrastructure delivery plan</li>
+                        <li>Infrastructure capacity study</li>
+                        <li>Education need/school planning </li>
+                    </ul>
+                    <li><a href="#">Transport study</a></li>
+
+                </ul>
+                <br>
+
+                <!--maybe studies-->
+                <h2 class="govuk-heading-m">
+                    Additional evidence you may need
+                </h2>
+                <p class="govuk-body">
+                    You may also benefit from including additonal studies. Use your planning judgement to decide if you
+                    need
+                    these: </p>
+
+                <h3 class="govuk-heading-s">8. Plan making and strategy additional evidence</h3>
+                <p>Informing the growth and spatial strategy:</p>
+                <ul class="govuk-list govuk-list--bullet">
+                    <li><a href="#">Settlement study</a></li>
+                    <li><a href="#">Built up area boundary review</a></li>
+                    <li><a href="#">Green Belt Review</a></li>
+                    <li><a href="#">Metropolitan Open Space Review</a></li>
+                </ul>
+
+                <h3 class="govuk-heading-s">9. Mixed-use development and regeneration additional evidence</h3>
+                <ul class="govuk-list govuk-list--bullet">
+                    <li><a href="#">Scale technical and design evidence</a></li>
+                </ul>
+
+                <h3 class="govuk-heading-s">10. Built design and heritage additional evidence</h3>
+                 <p>Informing the character study:</p>
+                <ul class="govuk-list govuk-list--bullet">
+                    <li><a href="#">Townscape assessment</a></li>
+                    <li><a href="#">National landscape management plan</a></li>
+                    <li><a href="#">Landscape Character Area Assessment</a></li>
+                    <li><a href="#">Landscape sensitivity assessment</a></li>
+                    <li><a href="#">Landscape visual impact assessment</a></li>
+                </ul>
+
+                <h3 class="govuk-heading-s">11. Natural environment and open land additional evidence</h3>
+                <ul class="govuk-list govuk-list--bullet">
+                    <li><a href="#">Water neutrality study</a></li>
+                    <li><a href="#">Coastal change management area study</a></li>
+                    <li><a href="#">Special preservation areas (SPA) and Special areas of conservation (SAC) designations</a></li>
+                </ul>
+                <p>Informing the strategic flood risk assessment:</p>
+                <ul class="govuk-list govuk-list--bullet">
+                    <li><a href="#">Flood risk assessment (level 2)</a></li>
+                    <li><a href="#">Strategic flood risk assessment (level 3)</a></li>
+                </ul>
+
+                <!--<p>In relation to the character study:</p>
+                <ul>
+                    <li><a href="#">National landscape management plan</a></li>
+                    <li><a href="#">Landscape Character Area Assessment</a></li>
+                    <li><a href="#">Landscape sensitivity assessment</a></li>
+                    <li><a href="#">Landscape visual impact assessment</a></li>
+                </ul>-->
+
+                <h3 class="govuk-heading-s">12. Community services and health additional evidence</h3>
+                <ul class="govuk-list govuk-list--bullet">
+                    <li><a href="#">Noise Assessment</a></li>
+                    <li><a href="#">Cemetery provision report</a></li>
+
+                </ul>
+
+                <h3 class="govuk-heading-s">13. Transport and infrastructure additional evidence</h3>
+                 <p>Informing the infrastructure strategy:</p>
+                <ul class="govuk-list govuk-list--bullet">
+                    <li><a href="#">Local area energy action plan</a></li>
+                    <li><a href="#">Future waste data study</a></li>
+                </ul>
+
+                <br>
+                <!--evidence you do not need-->
+                <h2 class="govuk-heading-m">
+                    Evidence you do not need
+                </h2>
+                <p class="govuk-body">
+                    Your answers suggest you do not need these additional studies:</p>
+                <h3 class="govuk-heading-s">14. Green belt unneeded evidence</h3>
+                
+                <ul class="govuk-list govuk-list--bullet">
+                <li><a href="#">Green belt exceptional circumstances evidence paper</a></li>
+                </ul>
+
+
+
+
+
+
+                </p>
+            </div>
+        </div>
+    </main>
+
+    {% endblock %}
