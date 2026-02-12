@@ -1,0 +1,132 @@
+{% extends "govuk-prototype-kit/layouts/unbranded.html" %}
+
+{% block pageTitle %}
+Flowcharts - {{ serviceName }}
+{% endblock %}
+
+{% block content %}
+<div class="govuk-width-container">
+    <a href="EB-prototypes.html" class="govuk-back-link">Back</a> 
+    <!--<a href="javascript:history.back()" class="govuk-back-link">Back</a>-->
+    <main class="govuk-main-wrapper " id="main-content" role="main">
+
+        <span class="govuk-caption-m">Guidance</span>
+                <h1 class="govuk-heading-xl">Check the evidence to provide with your local plan</h1>
+
+
+                <p class="govuk-body">
+                    This guidance will help you decide which additional studies to provide, based on your context and plan content. </p>
+
+                    <hr>
+                    <br>
+
+        <div class="govuk-grid-row">
+
+            <div class="govuk-grid-column-one-third content-list__sticky">
+               
+                <h2 class="govuk-heading-m">Flowchart menu</h2>                    
+                <ul class="govuk-list">
+
+                <li> <b>Plan making and strategy</b></li>
+                <li><a class="govuk-link govuk-link--no-visited-state" href="flowchart-page-2.html">Housing and residential</a></li>
+                <li><a class="govuk-link govuk-link--no-visited-state" href="#">Built design and heritage</a></li>
+                <li><a class="govuk-link govuk-link--no-visited-state" href="#">Natural environment and open land</a></li>
+                <li><a class="govuk-link govuk-link--no-visited-state" href="#">Culture, leisure and tourism</a></li>
+                <li><a class="govuk-link govuk-link--no-visited-state" href="#">Community services and health</a></li>
+                <li><a class="govuk-link govuk-link--no-visited-state" href="#">Transport and infrastructure</a></li> 
+                <li><a class="govuk-link govuk-link--no-visited-state" href="#">Green belt</a></li> 
+  
+              </ul>
+            
+
+              
+
+              <hr class="my-hr">
+                <h2 class="govuk-heading-m">Contents</h2>
+                <ol class="govuk-list govuk-list--number">
+                    
+                <li class="govuk-body-m">
+                    <a href="#question-1" class="govuk-link govuk-link--no-visited-state"> Are you expecting to allocate a new settlement or village?</a></li>
+                <li class="govuk-body-m">
+                    <a href="#question-2" class="govuk-link govuk-link--no-visited-state"> Are you expecting to allocate a site with 1000 homes or more?</a></li>    
+                <li class="govuk-body-m">
+                    <a href="#question-3" class="govuk-link govuk-link--no-visited-state"> Are you expecting to allocate a large site that’s critical to your plan’s strategic priorities?</a></li>  
+                <li class="govuk-body-m">
+                    <a href="#question-4" class="govuk-link govuk-link--no-visited-state"> Are there multiple towns or villages in the plan area?</a></li> 
+                    <li class="govuk-body-m">
+                    <a href="#question-5" class="govuk-link govuk-link--no-visited-state"> Is your LPA within Greater London?</a></li>  
+                    <li class="govuk-body-m">
+                    <a href="#question-6" class="govuk-link govuk-link--no-visited-state"> Is there green belt in the plan area?</a></li>    
+                    <li class="govuk-body-m">
+                    <a href="#question-7" class="govuk-link govuk-link--no-visited-state"> Are you likely to alter existing green belt boundaries?</a></li>  
+                    <li class="govuk-body-m">
+                    <a href="#question-8" class="govuk-link govuk-link--no-visited-state"> Do you intend to create a new green belt?</a></li>    
+              </ol>
+
+
+            </div>
+
+            
+
+            <div class="govuk-grid-column-two-thirds">
+
+                
+                    <h2 class="govuk-heading-m" align="center"> Plan making and strategy flowchart</h2>
+                    <br>
+                    
+                <div>
+                <img src="/public/images/Flowchart1.svg" alt="flowchart example" width="auto" height="auto" class="center"/>
+                </div>
+                 
+
+                <br>
+                <hr>
+
+                <div>
+                
+                    <br>
+                    <h3 id="question-1" class="govuk-heading-m">1. Are you expecting to allocate a new settlement or village?</h3>
+            <p class="govuk-body">Yes: Include a strategic scale technical and design evidence. Go to question 2.</p>
+            <p class="govuk-body">No: Go to question 2.</p>
+
+
+            <h3 id="question-2" class="govuk-heading-m">2. Are you expecting to allocate a site with 1000 homes or more?</h3>
+            <p class="govuk-body">Yes: Include a strategic scale technical and design evidence. Go to question 3.</p>
+            <p class="govuk-body">No: Go to question 3.</p>
+
+
+            <h3 id="question-3" class="govuk-heading-m">3. Are you expecting to allocate a large site that’s critical to your plan’s strategic priorities?</h3>
+            <p class="govuk-body">Yes: Use planning judgement and check with PINS if you need to Include a strategic scale technical and design evidence. Go to question 4.</p>
+            <p class="govuk-body">No: Go to question 4.</p>
+
+
+            <h3 id="question-4" class="govuk-heading-m">4. Are there multiple towns or villages in the plan area?</h3>
+            <p class="govuk-body">Yes: Include a settlement study with a built up area boundary review. Go to question 5.</p>
+            <p class="govuk-body">No: Go to question 5.</p>
+
+            <h3 id="question-5" class="govuk-heading-m">5. Is your LPA within Greater London?</h3>
+            <p class="govuk-body">Yes: Include a spatial development strategy conformity note and a metropolitan open space review. Go to question 6. </p>
+            <p class="govuk-body">No: Go to question 6.</p>
+
+            <h3 id="question-6" class="govuk-heading-m">6. Is there green belt in the plan area?</h3>
+            <p class="govuk-body">Yes: Include a green belt review. Go to question 7.</p>
+            <p class="govuk-body">No: Go to question 7.</p>
+
+            <h3 id="question-7" class="govuk-heading-m">7. Are you likely to alter existing green belt boundaries?</h3>
+            <p class="govuk-body">Yes: Include a green belt exceptional circumstances evidence paper. Go to question 8.</p>
+            <p class="govuk-body">No: Go to question 8.</p>
+
+            <h3 id="question-8" class="govuk-heading-m">Do you intend to create a new green belt?</h3>
+            <p class="govuk-body">Yes: Include a green belt exceptional circumstances evidence paper. Go to question 9.</p>
+            <p class="govuk-body govuk-link govuk-link--no-visited-state" a href="flowchart-page-2.html" >No: Go to question 9 on next page.</a></p>
+
+            </ul>
+        </div>
+            </div>
+        </div>
+
+                   
+        
+    </main>
+
+    {% endblock %}
